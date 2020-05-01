@@ -29,6 +29,13 @@ form.addEventListener("submit", function(e){
             return;
         }
         var age = calcAge();
+        var currentAge = age.split(" ")[0];
+        if(currentAge > 120){
+            alert("Enter valid Age");
+            existingUsers.pop();
+            dob.value=""
+            return;
+        }
         var country = countrySelect[countrySelect.selectedIndex].text;
         var state = stateSelect[stateSelect.selectedIndex].value;
         var city = citySelect[citySelect.selectedIndex].value;
@@ -76,6 +83,10 @@ form.addEventListener("submit", function(e){
         deleteBtn.addEventListener('click', function(){
             if(confirm("Are you sure to delete user " + usernameValue + "?")){
                 let i = this.parentNode.parentNode.rowIndex;
+                let email = this.parentNode.nextSibling.textContent
+                let index = existingUsers.indexOf(email)
+                console.log("index of " + email + " is " + index);
+                existingUsers.splice(index,1);
                 userTable.deleteRow(i);
             }else{
                 return;
@@ -192,7 +203,7 @@ function calcAge(){
             if(currentAge == 1){
                 str = " year old"
             }
-
+            
             currentAge = currentAge + str
         }
        
