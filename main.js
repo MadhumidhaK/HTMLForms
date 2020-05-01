@@ -141,12 +141,12 @@ function calcAge(){
     currentAge = currentYear - year;
     currentDate = today.getDate();
     if(currentYear < year){
-        alert("enter valid date");
+        alert("Enter valid Date");
         dob.value=""
     }
     else if(currentYear == year){
         if(currentMonth < month){
-            alert("enter valid date");
+            alert("Enter valid Date");
             dob.value=""
         }
         else if(currentMonth > month){
@@ -159,7 +159,7 @@ function calcAge(){
         }
         else if(currentMonth == month){
             if(date > currentDate){
-                alert("enter valid date");
+                alert("Enter valid Date");
                 dob.value=""
             }
             currentAge = currentDate - date;
