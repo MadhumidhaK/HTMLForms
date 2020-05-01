@@ -21,6 +21,10 @@ h3{
     margin: auto;
 }
 
+select{
+    border-radius: 5px;
+}
+
 select,
 textarea{
     border: 1px solid black;
