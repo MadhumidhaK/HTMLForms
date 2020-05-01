@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>User Details</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        
+        <div class="fluid-container">
+           
+            <div class="row">
+                <div id="form-col" class="col-md-12">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 text-center">
+                            <h3>Enter user details</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="form-div" class="form-div">
+                                <form id="user-form">
+                                    <input type="text" id="username" maxlength="50" name="username" placeholder="Enter Your Name" class="m-15 block-display" required>
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" class="m-15 block-display" required>
+                                    <input type="date" id="dob" name="dob" class="m-15 block-display" required>
+                                    <input type="text" id="age" name="age" placeholder="Enter age" class="m-15 block-display"></input>
+                                    <select id="country" class="m-15 block-display" required>
+                                        <option value="">Select Country</option>
+                                    </select>
+                                    <select id="state" class="m-15 no-display">
+                                        <option value="">Select State</option>
+                                    </select>
+                                    <select id="city" class="m-15 no-display">
+                                        <option value="">Select City</option>
+                                    </select>
+                                    <div class="m-15">
+                                        <input type="radio" name="gender" value="Male">
+                                        <label for="male">Male</label>
+                                        <input type="radio" name="gender" value="Female">
+                                        <label for="male">Female</label>
+                                        <input type="radio" name="gender" value="Others">
+                                        <label for="male">Others</label>
+                                    </div>
+                                    <div class="m-15">
+                                        <input type="checkbox" name="blue" value="Blue">
+                                        <label for="blue">Blue</label>
+                                        <input type="checkbox" name="green" value="Green">
+                                        <label for="green">Green</label>
+                                        <input type="checkbox" name="red" value="Red">
+                                        <label for="red">red</label>
+                                    </div>
+                                    
+                                    <div class="m-15">
+                                        <label for="self-desc">Write about the user</label>
+                                        <textarea name="user-desc" required></textarea>
+                                    </div>
+                                    
+                                    <input class="btn" id="form-submit" type="submit" value="Submit">
+                                    <button class="btn" id="form-reset" value="Reset"> Reset</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="details-view" class="no-display">
+                        <div class="row justify-content-end">
+                            <div class="col-md-12">
+                                <div class="names">
+                            
+                                </div>
+                                <table id="user-details">
+                                    <tr>
+                                        <th colspan="7" id="thead">User Details</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Age</th>
+                                        <th>Location</th>
+                                        <th>Gender</th>
+                                        <th>Favorite Color</th>
+                                        <th>About User</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script src="bundle.js"></script>   
+        <script src="main.js"></script>   
+
+    </body>
+</html>

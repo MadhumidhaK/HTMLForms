@@ -1,0 +1,205 @@
+.row{
+    margin: 0;
+}
+h3{
+    padding: 1rem;
+}
+
+.width-100{
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+.no-display{
+    display: none;
+}
+.bg-blue{
+    background-color: black;
+    color: white;
+}
+
+.m-4rem{
+    margin: auto;
+}
+
+select,
+textarea{
+    border: 1px solid black;
+    width: 100%;
+}
+
+input[type=text],
+input[type=date],
+input[type=email] {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=email]:focus{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+    box-sizing: border-box;
+}
+
+.m-15{  
+    margin: 15px 0 15px 0;
+    width: 100%;
+}
+
+#form-submit{
+    background-color: black;
+    color: white;
+    margin-right: 8%;
+}
+
+#form-submit:hover{
+    background-color: green;
+    color: white;
+    border: white solid 1px;
+}
+
+#form-reset{
+    background-color: rgb(236, 73, 73);
+    color: white;
+}
+#form-reset:hover{
+    background-color: red;
+    color: black;
+}
+.btn{
+    margin: 15px 0 15px 0;
+    width: 45%;
+}
+
+.delete{
+    background-color: rgb(236, 73, 73);
+    border: rgb(236, 73, 73) 1px solid;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    display: none;
+}
+.as-icon{
+    position: relative;
+    top:0;
+    right: 0;
+}
+.delete:hover{
+    background-color: red;
+    border: red 1px solid;
+    color: black;
+}
+
+.col-md-12,
+.col-md-4,
+.col-md-8{
+    padding: 0;
+}
+
+.form-col{
+    border-right: 1px solid black;
+    
+}
+form {
+    margin-block-end: 0;
+}
+
+.form-div{
+    width:300px;
+	position: relative;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;   
+    margin: auto;
+}
+
+.details-view{
+    padding: 0;
+}
+
+#age{
+    display: none;
+}
+
+
+
+
+.block-display{
+    display: block;
+}
+
+.open{
+    display: block;
+}
+
+.open-inline-block{
+    display: inline-block;
+}
+
+
+
+#user-details{
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+    width: 100%;
+
+}
+
+#user-details th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+#user-details th{
+    background-color: black;
+    color: white; 
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    border: white 1px solid;
+}
+#thead {
+    font-size: large;
+    text-align: center;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+#user-details tr:nth-child(odd){
+    background-color: gainsboro;
+}
+
+#user-details tr:hover{
+    background-color: rgb(192, 189, 189);
+}
+
+.m-left {
+    margin-left: 0;
+}
+
+
+@media (min-width:770px){
+    .form-col{
+        position: fixed;
+        height: 100%;
+    }
+
+    .m-left {
+        margin-left: 33.3%;
+    }
+
+    /* #details-view{
+        width: 67.6%;
+        float: right;
+    } */
+}
