@@ -55,7 +55,6 @@ input[type=email]:focus{
 #form-submit{
     background-color: black;
     color: white;
-    margin-right: 8%;
 }
 
 #form-submit:hover{
@@ -67,6 +66,7 @@ input[type=email]:focus{
 #form-reset{
     background-color: rgb(236, 73, 73);
     color: white;
+    margin-right: 8%;
 }
 #form-reset:hover{
     background-color: red;
